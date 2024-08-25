@@ -1,0 +1,45 @@
+cmd + shift - return : yabai -m window --toggle zoom-fullscreen
+
+### Switch focus between windows ###
+lalt - d : yabai -m window --focus east      # focus the window on right
+lalt - w: yabai -m window --focus north        # focus the window on up
+lalt - s : yabai -m window --focus south      # focus the window on down
+lalt - a : yabai -m window --focus west       # focus the window on left
+
+### Swap windows ###
+ctrl + shift - up : yabai -m window --warp north     # swap the window on up
+ctrl + shift - down : yabai -m window --warp south   # swap the windiow on down
+ctrl + shift - right : yabai -m window --warp east   # swap thw windows on right
+ctrl + shift - left : yabai -m window --warp west    # swap the windows on left
+
+### Focus displays ###
+ctrl + shift - s  : yabai -m display --focus 1     # focus main display
+ctrl + shift - g  : yabai -m display --focus 2    # focus second display
+
+### Move windows between spaces ###
+ctrl + shift + cmd - s : yabai -m window --space prev && yabai -m space --focus prev  # move window to previous space
+ctrl + shift + cmd - g : yabai -m window --space next && yabai -m space --focus next # move window to next space
+
+### Increase window size
+shift + alt - a : yabai -m window --resize left:-20:0
+shift + alt - s : yabai -m window --resize bottom:0:20
+shift + alt - w : yabai -m window --resize top:0:-20
+shift + alt - d : yabai -m window --resize right:20:0
+
+### Decrease window size ###
+shift + cmd - a : yabai -m window --resize left:20:0
+shift + cmd - s : yabai -m window --resize bottom:0:-20
+shift + cmd - w : yabai -m window --resize top:0:20
+shift + cmd - d : yabai -m window --resize right:-20:0
+
+### Toggle window layout ###
+cmd + shift - b : yabai -m space --layout bsp
+cmd + shift - f : yabai -m space --layout float
+
+### Create and Destroy Spaces ###
+ctrl + shift + cmd - n : yabai -m space --create && yabai -m space --focus next
+ctrl + shift + cmd - m : yabai -m space --destroy
+
+### Fast focus ###
+ctrl - left : (yabai -m space --focus prev || yabai -m space --focus last) || skhd -k "ctrl + cmd - left"
+ctrl - right : (yabai -m space --focus next || yabai -m space --focus first) || skhd -k "ctrl + cmd - right"

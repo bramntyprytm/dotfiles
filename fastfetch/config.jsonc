@@ -3,7 +3,7 @@
   "logo": {
     "source": "~/.config/fastfetch/logo",
     "color": {
-      "1": "blue"
+      "1": "white"
     },
     "type": "file",
     "padding": {
@@ -14,7 +14,7 @@
   },
   "display": {
      "separator": " - ",
-     "color": "blue"
+     "color": "green"
   },
   "modules": [
         {
@@ -27,12 +27,12 @@
         },
         {
             "type": "title",
-            "outputColor": "blue",
+            "outputColor": "green",
             "format": "{1}@{2}"
         },
         {
             "type": "custom",
-            "outputColor": "blue",
+            "outputColor": "green",
             "format": "-----------------------"
         },
         {

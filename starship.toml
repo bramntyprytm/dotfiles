@@ -11,7 +11,7 @@ $python\
 $character"""
 
 [directory]
-style = "white"
+style = "green"
 
 [character]
 success_symbol = "[❯](purple)"
@@ -47,12 +47,12 @@ style = "bright-black"
 
 [hostname]
 ssh_only = false
-format = '[$username](bold blue)[$hostname](bold blue) '
+format = '[$username](bold white)[$hostname](bold white) '
 trim_at = '.local'
 disabled = false
 
 [username]
-style_user = 'blue bold'
+style_user = 'white bold'
 style_root = 'black bold'
 format = '[$user@]($style)'
 disabled = false

@@ -41,6 +41,6 @@ yabai -m rule --add app="^Activity Monitor$" manage=off sticky=on
 yabai -m rule --add app="^console$" manage=off sticky=on
 yabai -m rule --add app="Raycast" manage=off sticky=on
 
-borders active_color=0xff87CEFA inactive_color=0xff494d64 width=5.0 &
+borders active_color=0xFFFFFFFF inactive_color=0xff494d64 width=5.0 &
 
 echo "yabai configuration loaded.."

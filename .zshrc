@@ -1,4 +1,4 @@
-/opt/homebrew/bin/fastfetch
+# /opt/homebrew/bin/fastfetch
 
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -21,6 +21,7 @@ zinit light Aloxaf/fzf-tab
 # Load completions
 autoload -Uz compinit && compinit
 
+alias pyloc="/usr/local/bin/python3"
 alias pym="python3 manage.py"
 alias pyv="source env/bin/activate"
 alias gita="git add -A"
@@ -28,6 +29,7 @@ alias gitcm="git commit -m"
 alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias cl="clear"
 alias cf="clear; fastfetch"
+alias cduni="cd ~/Documents/university-studies/semester-5/"
 
 # Keybindings
 bindkey -e
@@ -63,4 +65,4 @@ source <(fzf --zsh)
 
 # Set up starship prompt
 eval "$(starship init zsh)"
-export PATH=$PATH:/Users/bramantyopriyoutomo/.spicetify
+export SSLKEYLOGFILE=/Users/bramantyopriyoutomo/Documents/university-studies/semester-5/jaringan-komputer/ssl-key/ssl-key.log

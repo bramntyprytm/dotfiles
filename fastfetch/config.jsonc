@@ -3,7 +3,7 @@
   "logo": {
     "source": "~/.config/fastfetch/logo",
     "color": {
-      "1": "white"
+      "1": "green"
     },
     "type": "file",
     "padding": {
@@ -33,7 +33,7 @@
         {
             "type": "custom",
             "outputColor": "green",
-            "format": "-----------------------"
+            "format": "--------------------------------"
         },
         {
             "type": "os"

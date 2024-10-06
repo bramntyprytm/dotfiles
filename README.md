@@ -11,3 +11,5 @@ Had the most brilliant idea of tinkering with my computer during last semester's
 Behold, my dotfiles, only the most important ones at least, you know how cluttered your $HOME directory could be.
 
 Could have used stow for better symlink management, maybe in the future.
+
+testing git

@@ -11,16 +11,16 @@ $python\
 $character"""
 
 [directory]
-style = "green"
+style = "white"
 
 [character]
-success_symbol = "[❯](purple)"
+success_symbol = "[❯](white)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
 
 [git_branch]
 format = "[on $branch]($style)"
-style = "bright-black"
+style = "green"
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
@@ -47,13 +47,13 @@ style = "bright-black"
 
 [hostname]
 ssh_only = false
-format = '[$username](bold white)[$hostname](bold white) '
+format = '[$username](bold green)[$hostname](bold green) [in](white) '
 trim_at = '.local'
 disabled = false
 
 [username]
-style_user = 'white bold'
-style_root = 'black bold'
+style_user = 'green bold'
+style_root = 'red bold'
 format = '[$user@]($style)'
 disabled = false
 show_always = true

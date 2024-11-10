@@ -65,4 +65,3 @@ source <(fzf --zsh)
 
 # Set up starship prompt
 eval "$(starship init zsh)"
-export SSLKEYLOGFILE=/Users/bramantyopriyoutomo/Documents/university-studies/semester-5/jaringan-komputer/ssl-key/ssl-key.log

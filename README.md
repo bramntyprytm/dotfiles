@@ -1,6 +1,6 @@
-# macOS "rice"
+<!-- # macOS "rice" -->
 
-![img1](static/basic.png)
+<!-- ![img1](static/basic.png)
 - 
 ![img2](static/better.png)
 - 
@@ -12,4 +12,4 @@ Behold, my dotfiles, only the most important ones at least, you know how clutter
 
 Could have used stow for better symlink management, maybe in the future.
 
-testing git
+testing git -->

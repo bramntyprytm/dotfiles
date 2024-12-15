@@ -7,14 +7,13 @@
     },
     "type": "file",
     "padding": {
-        "top": 2,
+        "top": 1,
         "left": 3,
-        "right": 5
+        "right": 4
     }
   },
   "display": {
-     "separator": " - ",
-     "color": "green"
+    "color": "green"
   },
   "modules": [
         {
@@ -27,26 +26,24 @@
         },
         {
             "type": "title",
-            "outputColor": "green",
-            "format": "{1}@{2}"
+            "format": "{1}@{2}",
+            "outputColor": "green"
         },
         {
             "type": "custom",
             "outputColor": "green",
-            "format": "--------------------------------"
+            "format": "┌──────────────────────────────────────┐"
         },
         {
-            "type": "os"
+            "type": "os",
+            "keyColor": "green"
         },
         {
-            "type": "host",
-            "format": "{2}"
+            "type": "host"
         },
         {
-            "type": "cpu"
-        },
-        {
-            "type": "gpu"
+            "type": "cpu",
+            "format": "{1}"
         },
         {
             "type": "memory",
@@ -57,15 +54,16 @@
             "format": "{1} / {2} ({3})"
         },
         {
-            "type": "kernel",
-            "format": "{1} {2}"
-        },
-        {
             "type": "uptime"
         },
         {
-            "type": "packages"
-        },  
+            "type": "shell"
+        },
+        {
+            "type": "custom",
+            "format": "└──────────────────────────────────────┘",
+            "outputColor": "green"
+        },
         {
             "type": "colors",
             "symbol": "square"

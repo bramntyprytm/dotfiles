@@ -43,6 +43,8 @@
         },
         {
             "type": "cpu",
+            "key": "Chip",
+            "keyColor": "green",
             "format": "{1}"
         },
         {

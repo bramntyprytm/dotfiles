@@ -22,10 +22,6 @@ zinit light Aloxaf/fzf-tab
 autoload -Uz compinit && compinit
 
 alias pyloc="/usr/local/bin/python3"
-alias pym="python3 manage.py"
-alias pyv="source env/bin/activate"
-alias gita="git add -A"
-alias gitcm="git commit -m"
 alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias cl="clear"
 alias cf="clear; fastfetch"

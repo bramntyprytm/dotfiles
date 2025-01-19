@@ -19,33 +19,33 @@ yabai -m config \
 	split_ratio 0.50 \
 	split_type auto \
 	auto_balance off \
-	top_padding 16 \
-	bottom_padding 16 \
-	left_padding 16 \
-	right_padding 16 \
-	window_gap 16 \
+	top_padding 10 \
+	bottom_padding 10 \
+	left_padding 10 \
+	right_padding 10 \
+	window_gap 10 \
 	layout bsp \
 	mouse_modifier fn \
 	mouse_action1 move \
 	mouse_action2 resize \
 	mouse_drop_action swap \
 
-yabai -m rule --add app="^System Settings$" manage=off sticky=on
-yabai -m rule --add app="^Preview$" manage=off sticky=on
-yabai -m rule --add app="Stats"manage=off sticky=on
-yabai -m rule --add app="Calculator" manage=off sticky=on
-yabai -m rule --add app="^Finder$" manage=off sticky=on
-yabai -m rule --add app="^Disk Utility$" manage=off sticky=on
-yabai -m rule --add app="^System Information$" manage=off sticky=on
-yabai -m rule --add app="^Activity Monitor$" manage=off sticky=on
-yabai -m rule --add app="^console$" manage=off sticky=on
-yabai -m rule --add app="Raycast" manage=off sticky=on
-yabai -m rule --add app="Reminders" manage=off sticky=on
-yabai -m rule --add app="Calendar" manage=off sticky=on
-yabai -m rule --add app="stremio" manage=off sticky=on
-yabai -m rule --add app="Spotify" manage=off sticky=on
-yabai -m rule --add app="Clock" manage=off sticky=on
+yabai -m rule --add app="^System Settings$" manage=off sticky=off 
+yabai -m rule --add app="^Preview$" manage=off sticky=off
+yabai -m rule --add app="Stats"manage=off sticky=off
+yabai -m rule --add app="Calculator" manage=off sticky=off
+yabai -m rule --add app="^Finder$" manage=off sticky=off
+yabai -m rule --add app="^Disk Utility$" manage=off sticky=off
+yabai -m rule --add app="^System Information$" manage=off sticky=off
+yabai -m rule --add app="^Activity Monitor$" manage=off sticky=off
+yabai -m rule --add app="^console$" manage=off sticky=off 
+yabai -m rule --add app="Reminders" manage=off sticky=off 
+yabai -m rule --add app="Calendar" manage=off sticky=off 
+yabai -m rule --add app="stremio" manage=off sticky=off 
+yabai -m rule --add app="Spotify" manage=off sticky=off 
+yabai -m rule --add app="Clock" manage=off sticky=off 
+yabai -m rule --add app="GIMP" manage=off sticky=off 
 
-borders active_color=0xFFFFFFFF inactive_color=0xc02c2e34 width=5.0 blacklist="iPhone Mirroring"
+borders active_color=0xFFFFFFFF inactive_color=0xc02c2e34 width=4.0 blacklist="iPhone Mirroring"
 
 echo "yabai configuration loaded.."

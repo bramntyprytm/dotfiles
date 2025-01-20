@@ -3,7 +3,7 @@ export autoraise_toggle="on"
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
 
-# Focus the window that is hoverd with the mouse
+# Focus the window that is hovered with the mouse
 # if [[ $autoraise_toggle == "on" ]]; then
 #    yabai -m config focus_follows_mouse autoraise
 # fi
@@ -44,7 +44,8 @@ yabai -m rule --add app="Calendar" manage=off sticky=off
 yabai -m rule --add app="stremio" manage=off sticky=off 
 yabai -m rule --add app="Spotify" manage=off sticky=off 
 yabai -m rule --add app="Clock" manage=off sticky=off 
-yabai -m rule --add app="GIMP" manage=off sticky=off 
+yabai -m rule --add app="GIMP" manage=off sticky=off
+yabai -m rule --add app="zoom.us" manage=off sticky=off 
 
 borders active_color=0xFFFFFFFF inactive_color=0xc02c2e34 width=4.0 blacklist="iPhone Mirroring"
 

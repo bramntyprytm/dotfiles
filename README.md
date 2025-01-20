@@ -1,15 +1,18 @@
-<!-- # macOS "rice" -->
+# Dotfiles
+None of this stuff makes me a better programmer, but damn does it feel good to have your screen look like you know your stuff, macOS is so fun to tinker with.
 
-<!-- ![img1](static/basic.png)
-- 
-![img2](static/better.png)
-- 
-![img3](static/fullofhell.png)
-- 
-Had the most brilliant idea of tinkering with my computer during last semester's finals week (not recommended) and thought why not finish the job? 
+## Light "rice" Showcase
+![img1](static/lockscreen.png)
+![img3](static/discontinued-project.png)
+![img2](static/spotify.png)
 
-Behold, my dotfiles, only the most important ones at least, you know how cluttered your $HOME directory could be.
-
-Could have used stow for better symlink management, maybe in the future.
-
-testing git -->
+### Configs Used in Showcase
+- [yabai](https://github.com/koekeishiya/yabai)
+- [skhd](https://github.com/koekeishiya/skhd)
+- [cmatrix](https://github.com/abishekvashok/cmatrix)
+- [alacritty](https://github.com/alacritty/alacritty)
+- [alacritty-catpuccin-theme](https://github.com/catppuccin/alacritty)(slightly modified)
+- [btop](https://github.com/aristocratos/btop)
+- [btop-catpuccin-theme](https://github.com/catppuccin/btop)(slightly modified)
+- [fastfetch](https://github.com/fastfetch-cli/fastfetch)
+- [source-wallpaper](https://www.pixiv.net/en/artworks/116399382)

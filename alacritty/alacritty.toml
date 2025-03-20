@@ -2,8 +2,9 @@
 TERM = "xterm-256color"
 
 [window]
-decorations = "transparent"
-padding = { x = 15, y = 20}
+decorations = "Transparent"
+padding = { x = 15, y = 30 }
+dimensions = { columns = 92, lines = 24 }
 
 [cursor]
 blink_interval = 500
@@ -18,9 +19,5 @@ bold = { family = "FiraCode Nerd Font", style = "Bold" }
 
 [general]
 import = [
-  # uncomment the flavour you want below:
-  # "~/.config/alacritty/catppuccin-latte.toml"
-  # "~/.config/alacritty/catppuccin-frappe.toml"
-  # "~/.config/alacritty/catppuccin-macchiato.toml"
   "~/.config/alacritty/catppuccin-mocha.toml"
 ]

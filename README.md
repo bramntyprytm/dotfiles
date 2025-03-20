@@ -2,9 +2,9 @@
 None of this stuff makes me a better programmer, but damn does it feel good to have your screen look like you know your stuff, macOS is so fun to tinker with.
 
 ## Light "rice" Showcase
-![img1](static/lockscreen.png)
-![img3](static/discontinued-project.png)
-![img2](static/spotify.png)
+![img1](static/fetch.png)
+![img3](static/disc_project.png)
+![img2](static/spotify_joyryde.png)
 
 ### Configs Used in Showcase
 - [yabai](https://github.com/koekeishiya/yabai)

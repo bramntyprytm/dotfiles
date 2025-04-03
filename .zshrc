@@ -21,11 +21,10 @@ zinit light Aloxaf/fzf-tab
 # Load completions
 autoload -Uz compinit && compinit
 
-alias pyloc="/usr/local/bin/python3"
-alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 alias cl="clear"
 alias cf="clear; fastfetch"
-alias cduni="cd ~/Documents/university-studies/semester-5/"
+alias ls="ls --color=auto"
+alias fvim="fzf-tmux -p --reverse | xargs -o vim"
 
 # Keybindings
 bindkey -e
@@ -56,8 +55,19 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Disable homebrew auto-update
 HOMEBREW_NO_AUTO_UPDATE=1
 
+# Change fzf theme to catppuccin mocha
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1f1f1f,spinner:#f5e0dc,hl:#a6e3a1 \
+--color=fg:#cdd6f4,header:#a6e3a1,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#a6e3a1 \
+--color=selected-bg:#45475a \
+--color=border:#313244,label:#cdd6f4"
+
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
 # Set up starship prompt
 eval "$(starship init zsh)"
+
+# Change alacritty title bar
+preexec() { print -Pn "\e]0;$1\a" }

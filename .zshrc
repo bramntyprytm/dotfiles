@@ -1,4 +1,8 @@
-# /opt/homebrew/bin/fastfetch
+# If you want to display fastfetch on shell startup
+/opt/homebrew/bin/fastfetch
+
+# No homebrew hints
+HOMEBREW_NO_ENV_HINTS=1
 
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -21,10 +25,12 @@ zinit light Aloxaf/fzf-tab
 # Load completions
 autoload -Uz compinit && compinit
 
-alias cl="clear"
+alias cdm="codium"
 alias cf="clear; fastfetch"
+alias cl="clear"
+alias config="~/.config"
 alias ls="ls --color=auto"
-alias fvim="fzf-tmux -p --reverse | xargs -o vim"
+alias ff="fastfetch"
 
 # Keybindings
 bindkey -e
@@ -51,23 +57,25 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:*' fzf-flags --color=bg+:#313244,bg:#000000,spinner:#f5e0dc,hl:#a6e3a1 \
+  --color=fg:#cdd6f4,header:#a6e3a1,info:#cba6f7,pointer:#f5e0dc \
+  --color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#a6e3a1 \
+  --color=selected-bg:#45475a --color=border:#313244,label:#cdd6f4
 
-# Disable homebrew auto-update
-HOMEBREW_NO_AUTO_UPDATE=1
-
-# Change fzf theme to catppuccin mocha
-export FZF_DEFAULT_OPTS=" \
---color=bg+:#313244,bg:#1f1f1f,spinner:#f5e0dc,hl:#a6e3a1 \
---color=fg:#cdd6f4,header:#a6e3a1,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#a6e3a1 \
---color=selected-bg:#45475a \
---color=border:#313244,label:#cdd6f4"
+# fzf theme to match terminal colors
+export FZF_DEFAULT_OPTS="
+  --style=full
+  --border
+  --color=bg:#000000,bg+:#000000,preview-bg:#000000
+  --color=fg:#cdd6f4,fg+:#cdd6f4
+  --color=hl:#f38ba8,hl+:#f38ba8
+  --color=border:#45475a,preview-border:#45475a
+  --color=info:#a6adc8,prompt:#a6e3a1,pointer:#f5e0dc
+  --color=marker:#f5e0dc,spinner:#f5e0dc,header:#89b4fa
+"
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
 # Set up starship prompt
 eval "$(starship init zsh)"
-
-# Change alacritty title bar
-preexec() { print -Pn "\e]0;$1\a" }

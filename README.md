@@ -1,18 +1,13 @@
-# Dotfiles
-None of this stuff makes me a better programmer, but damn does it feel good to have your screen look like you know your stuff, macOS is so fun to tinker with.
+# dotfiles
 
-## Light "rice" Showcase
-![img1](static/fetch.png)
-![img3](static/disc_project.png)
-![img2](static/spotify_joyryde.png)
+![im1](images/Screenshot%202026-03-12%20at%2001.35.25.png)
+![im3](images/Screenshot%202026-03-12%20at%2001.48.58.png)
+![im2](images/Screenshot%202026-03-12%20at%2001.46.34.png)
+![im4](images/Screenshot%202026-03-12%20at%2001.36.18.png)
 
-### Configs Used in Showcase
-- [yabai](https://github.com/koekeishiya/yabai)
-- [skhd](https://github.com/koekeishiya/skhd)
-- [cmatrix](https://github.com/abishekvashok/cmatrix)
+## configs used in showcase:
+
 - [alacritty](https://github.com/alacritty/alacritty)
-- [alacritty-catpuccin-theme](https://github.com/catppuccin/alacritty)(slightly modified)
 - [btop](https://github.com/aristocratos/btop)
-- [btop-catpuccin-theme](https://github.com/catppuccin/btop)(slightly modified)
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch)
-- [source-wallpaper](https://www.pixiv.net/en/artworks/116399382)
+- [vscodium](https://vscodium.com)

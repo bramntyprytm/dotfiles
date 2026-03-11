@@ -31,43 +31,35 @@
         },
         {
             "type": "custom",
-            "outputColor": "green",
-            "format": "┌──────────────────────────────────────┐"
+            "format": ""
         },
         {
             "type": "os",
+            "format": "{name} {codename} {version}",
             "keyColor": "green"
         },
         {
-            "type": "host"
-        },
-        {
-            "type": "cpu",
-            "key": "Chip",
-            "keyColor": "green",
-            "format": "{1}"
+            "type": "host",
+            "format": "{2}"
         },
         {
             "type": "memory",
-            "format": "{1} / {2} ({3})"
+            "format": "{1} / {2}"
         },
         {
             "type": "disk",
-            "format": "{1} / {2} ({3})"
+            "format": "{1} / {2}"
         },
         {
             "type": "uptime"
         },
         {
-            "type": "shell"
-        },
-        {
-            "type": "custom",
-            "format": "└──────────────────────────────────────┘",
-            "outputColor": "green"
+            "type": "shell",
+            "format": "{1}"
         },
         {
             "type": "colors",
             "symbol": "square"
         }
-    ]}
+    ]
+}

@@ -1,0 +1,93 @@
+{
+    // Appearance
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "catppuccin.accentColor": "green",
+    "catppuccin.colorOverrides": {
+        "mocha": {
+        "base": "#000000",
+        "mantle": "#000000",
+        "crust": "#000000",
+        }
+    },
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#b2e1a7",
+        "tab.activeBorder": "#000000",
+        "tab.activeBorderTop": "#000000",
+        "terminalCursor.foreground": "#b2e1a7",
+        "sideBar.border": "#000000",
+    },
+    "window.title": " ",
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+
+    // Workbench UI
+    "workbench.sideBar.location": "right",
+    "workbench.statusBar.visible": true,
+    "workbench.layoutControl.type": "menu",
+    "workbench.editor.enablePreview": false,
+    "workbench.startupEditor": "none",
+    "workbench.navigationControl.enabled": false,
+    "workbench.list.smoothScrolling": true,
+    "workbench.tree.renderIndentGuides": "none",
+
+    // Editor Behavior
+    "editor.minimap.enabled": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.overviewRulerBorder": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.glyphMargin": true,
+    "editor.showFoldingControls": "never",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.guides.bracketPairsHorizontal": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "underline",
+    "editor.smoothScrolling": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "breadcrumbs.enabled": false,
+
+    // Miscellaneous
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDelete": false,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "redhat.telemetry.enabled": true,
+    "python.defaultInterpreterPath": "/Users/bramntyprytm/Downloads/0-basic-plotting/env",
+    "json.schemaDownload.trustedDomains": {
+        "https://schemastore.azurewebsites.net/": true,
+        "https://raw.githubusercontent.com/microsoft/vscode/": true,
+        "https://raw.githubusercontent.com/devcontainers/spec/": true,
+        "https://www.schemastore.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://json-schema.org/": true,
+        "https://developer.microsoft.com/json-schemas/": true,
+        "https://esm.sh/gh/catppuccin/vscode%40catppuccin-vsc-v3.18.1/packages/catppuccin-vsc/schemas/customUIColors.schema.json": true
+    },
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.initialHint": false
+}
